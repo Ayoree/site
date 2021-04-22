@@ -1,0 +1,39 @@
+body {
+    background-color: #303440!important;
+    background:  linear-gradient(135deg,#434343 0,#000 100%);
+}
+
+footer {
+    background-color: rgba(180, 180, 180, .1);
+    
+    background: linear-gradient(180deg, rgb(180, 180, 180, 15%), #ffffff1c 30%, #00000000);
+}
+
+.divider {
+    height: 3rem;
+    background-color: rgba(180, 180, 180, .1);
+    border: solid rgba(180, 180, 180, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgb(180, 180, 180, 10%), inset 0 0.125em 0.5em rgb(180, 180, 180, 15%);
+}
+
+.tb-divider {
+    height: 1.5rem;
+    background: linear-gradient(0deg, #00000000, #ffffff1c);
+    border-width: 0px;
+}
+.bt-divider {
+    height: 1.5rem;
+    background: linear-gradient(0deg,#ffffff1c,  #00000000);
+    border-width: 0px;
+}
+
+.order-btn {
+    box-shadow: 0px 0px 8px rgb(184, 184, 184);
+}
+.order-link {
+    color: #d39f02;
+}
+.order-link:hover {
+    color: #d8a200;
+}
