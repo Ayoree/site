@@ -1,3 +1,4 @@
+// Выбор типа работы
 function OrderTypeChanged(obj)
 {
     if (obj.OrderType.value == "Код на СИ" || obj.OrderType.value == "Код на JavaScript") {
@@ -11,7 +12,17 @@ function OrderTypeChanged(obj)
     }
 }
 
+
+
+
+
 // для заполнения номера телефона в форме
+
+window.addEventListener("DOMContentLoaded", function () {
+    var input = document.querySelector("#online_phone");
+    input.addEventListener("input", mask, false);
+});
+
 function setCursorPosition(pos, e) {
     e.focus();
     if (e.setSelectionRange) e.setSelectionRange(pos, pos);
@@ -39,9 +50,3 @@ function mask(e) {
     i < matrix.length && matrix != this.placeholder ? i++ : i = matrix.indexOf("_");
     setCursorPosition(i, this)
 }
-window.addEventListener("DOMContentLoaded", function () {
-    var input = document.querySelector("#online_phone");
-    input.addEventListener("input", mask, false);
-    input.focus();
-    setCursorPosition(3, input);
-});
