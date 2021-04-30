@@ -1,0 +1,40 @@
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    border-radius: 5px;
+    background-color: rgb(219, 219, 219);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+    border-radius: 5px 5px 0px 0px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    border-radius: 0px 0px 5px 5px;
+    padding: 0 18px;
+    background-color: rgb(245, 245, 245);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+}

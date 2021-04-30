@@ -9,6 +9,30 @@ footer {
     background: linear-gradient(180deg, rgb(180, 180, 180, 15%), #ffffff1c 30%, #00000000);
 }
 
+.in-process {
+    color: rgb(206, 116, 33);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(206, 116, 33);
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 139, 30);
+    float: inherit;
+    position: relative;
+    letter-spacing: 2em;
+    top: 195px;
+    transform: rotate(-10deg);
+    
+}
+
+
+a:hover {
+    color: #9bc3ff !important;
+}
+
+.blurry-text {
+    color: transparent !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
 .divider {
     height: 3rem;
     background-color: rgba(180, 180, 180, .1);

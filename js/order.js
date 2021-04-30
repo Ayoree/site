@@ -19,9 +19,22 @@ function OrderTypeChanged(obj)
 // для заполнения номера телефона в форме
 
 window.addEventListener("DOMContentLoaded", function () {
-    var input = document.querySelector("#online_phone");
+    let input = document.querySelector("#online_phone");
     input.addEventListener("input", mask, false);
 });
+
+function dateChanged() {
+    let input = document.querySelector("#dead_line");
+    let deadline = new Date(input.value);
+    let today = new Date();
+    if (deadline < today)
+    {
+        let year = today.getFullYear();
+        let month = today.getMonth() + 1 < 10 ? '0' + (today.getMonth() + 1) : today.getMonth() + 1;
+        let day = today.getDate() < 10 ? '0' + today.getDate() : today.getDate();
+        input.value = year + "-" + month  + "-" + day;
+    }
+}
 
 function setCursorPosition(pos, e) {
     e.focus();
